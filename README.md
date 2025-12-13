@@ -90,17 +90,17 @@ Experienced in **automotive and industrial embedded systems**, with a strong int
 
 ## 📊 GitHub Activity
 <p align="center">
-  <img src="https://github-readme-streak-stats.herokuapp.com/?user=remiboivin&theme=dark"  height="160px" width="500"/>
-  <img src="https://github-readme-stats.vercel.app/api?username=remiboivin021&show_icons=true&include_all_commits=true&theme=radical"  height="160px" width="500"/>
+  <img src="https://github-readme-streak-stats.herokuapp.com/?user=remiboivin&theme=dark" height="160"/>
+  <img src="https://github-readme-stats.vercel.app/api?username=remiboivin021&show_icons=true&include_all_commits=true&theme=radical" height="160"/>
 </p>
 
 <p align="center">
-  <img src="https://github-readme-stats.vercel.app/api/top-langs/?username=remiboivin021&layout=compact&theme=dark" style="height: 160px;width:500px;"/>
-  <img src="https://github-profile-summary-cards.vercel.app/api/cards/productive-time?username=remiboivin021&theme=github_dark""/>
+  <img src="https://github-readme-stats.vercel.app/api/top-langs/?username=remiboivin021&layout=compact&theme=dark" height="160px" width="400"/>
+  <img src="https://github-profile-summary-cards.vercel.app/api/cards/productive-time?username=remiboivin021&theme=github_dark" height="160px" width="400""/>
 </p>
 
 <p align="center">
-  <img src="https://github-profile-summary-cards.vercel.app/api/cards/profile-details?username=remiboivin021&theme=github_dark"  height="160px" width="500"/>
+  <img src="https://github-profile-summary-cards.vercel.app/api/cards/profile-details?username=remiboivin021&theme=github_dark" height="220"/>
 </p>
 
 ---

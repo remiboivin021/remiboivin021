@@ -95,7 +95,7 @@ Experienced in **automotive and industrial embedded systems**, with a strong int
 </p>
 
 <p align="center">
-  <img src="https://github-readme-stats.vercel.app/api/top-langs/?username=remiboivin021&layout=compact&theme=dark" style="height: 160px;width:100px"/>
+  <img src="https://github-readme-stats.vercel.app/api/top-langs/?username=remiboivin021&layout=compact&theme=dark" style="height: 160px;width:400px;"/>
   <img src="https://github-profile-summary-cards.vercel.app/api/cards/productive-time?username=remiboivin021&theme=github_dark" style="height: 160px"/>
 </p>
 

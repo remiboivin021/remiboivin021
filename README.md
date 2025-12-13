@@ -7,6 +7,7 @@ C / C++ • Embedded Systems • Robotics • Automotive • Open Source
 🎨 Writing clean, reliable, and innovative embedded software
 
 ---
+[![GitHub Trends SVG](https://api.githubtrends.io/user/svg/avgupta456/langs)](https://githubtrends.io)
 
 ## 🎯 Professional Summary
 
@@ -70,7 +71,7 @@ Experienced in **automotive and industrial embedded systems**, with a strong int
         title 🕒 Experience Timeline
         2018 : Software Engineer (Web Development)
         2022 : Embedded Engineer — Lenewt (Engineering Office), Lyon
-        2023  : Embedded Engineer — Volvo Group
+        2023 : Embedded Engineer — Volvo Group
         2024 : Embedded Engineer — ACTIA
         2025 : International Experience (1 year abroad)
 ```
@@ -79,7 +80,7 @@ Experienced in **automotive and industrial embedded systems**, with a strong int
 ## 📌 Career Goals
 
 - 💼 **Embedded Engineer position**
-- 🚗 Automotive, robotics, or industrial embedded systems
+- 🚗 Automotive, robotics, or aerospatial embedded systems
 - 🌱 Continuous learning (Rust, embedded architectures)
 - 🤝 Active participation in **open-source embedded projects**
 
@@ -87,17 +88,27 @@ Experienced in **automotive and industrial embedded systems**, with a strong int
 
 ## 📊 GitHub Activity
 
-![GitHub Stats](https://github-readme-stats.vercel.app/api?username=remiboivin&show_icons=true&theme=dark)
-
 ![GitHub Streak](https://github-readme-streak-stats.herokuapp.com/?user=remiboivin&theme=dark)
 
 ![Top Languages](https://github-readme-stats.vercel.app/api/top-langs/?username=remiboivin&layout=compact&theme=dark)
+<img align="center" src="https://github-readme-stats.vercel.app/api?username=remiboivin021&show_icons=true&include_all_commits=true&theme=radical" alt="remiboivin021's github stats" />
+<img align="center" src="https://github-readme-stats.vercel.app/api/top-langs/?username=remiboivin021&layout=compact&theme=radical" />
+
+![](https://github-profile-summary-cards.vercel.app/api/cards/profile-details?username=remiboivin021&theme=github_dark)
+
+![](https://github-profile-summary-cards.vercel.app/api/cards/productive-time?username=remiboivin021&theme=github_dark)
 
 ---
 
+## 📄 Recruiters & ATS
+
+An ATS-friendly version of my profile is available here:  
+➡️ [README_ATS.md](./README_ATS.md)  
+➡️ Raw text: https://raw.githubusercontent.com/remiboivin021/remiboivin021/refs/heads/main/README_ATS.md
+
 ## 🔗 Contact
 
-[![GitHub](https://img.shields.io/badge/GitHub-111111?style=for-the-badge&logo=github&logoColor=white)](https://github.com/remiboivin)
+[![GitHub](https://img.shields.io/badge/GitHub-111111?style=for-the-badge&logo=github&logoColor=white)](https://github.com/remiboivin021/remiboivin021)
 [![LinkedIn](https://img.shields.io/badge/LinkedIn-111111?style=for-the-badge&logo=linkedin&logoColor=white)](https://www.linkedin.com/)
 [![Email](https://img.shields.io/badge/Email-111111?style=for-the-badge&logo=gmail&logoColor=white)](mailto:your@email.com)
 

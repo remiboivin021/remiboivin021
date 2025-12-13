@@ -90,20 +90,19 @@ Experienced in **automotive and industrial embedded systems**, with a strong int
 
 ## 📊 GitHub Activity
 <p align="center">
-  <img src="https://github-readme-streak-stats.herokuapp.com/?user=remiboivin&theme=dark" height="160"/>
-  <img src="https://github-readme-stats.vercel.app/api?username=remiboivin021&show_icons=true&include_all_commits=true&theme=radical" height="160"/>
+  <img src="https://github-readme-streak-stats.herokuapp.com/?user=remiboivin021&theme=dark" height="150" max-width=350/>
+  <img src="https://github-readme-stats.vercel.app/api?username=remiboivin021&show_icons=true&include_all_commits=true&theme=dark" height="150" max-width=350/>
 </p>
 
 <p align="center">
-  <img src="https://github-readme-stats.vercel.app/api/top-langs/?username=remiboivin021&layout=compact&theme=dark" style="height: 160px"/>
-  <img src="https://github-profile-summary-cards.vercel.app/api/cards/productive-time?username=remiboivin021&theme=github_dark" style="height:160px""/>
-</p>
-
-<p align="center">
-  <img src="https://github-profile-summary-cards.vercel.app/api/cards/profile-details?username=remiboivin021&theme=github_dark" height="220"/>
+  <img src="https://github-readme-stats.vercel.app/api/top-langs/?username=remiboivin021&layout=compact&theme=dark" height="150" max-width=350/>
+  <img src="https://github-profile-summary-cards.vercel.app/api/cards/profile-details?username=remiboivin021&theme=github_dark" height="150" max-width=350/>
 </p>
 
 ---
+
+<!--START_SECTION:waka-->
+<!--END_SECTION:waka-->
 
 ## 📄 Recruiters & ATS
 

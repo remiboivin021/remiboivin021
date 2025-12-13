@@ -104,6 +104,10 @@ Experienced in **automotive and industrial embedded systems**, with a strong int
 <!--START_SECTION:waka-->
 
 ```txt
+From: 13 June 2025 - To: 12 December 2025
+
+Total Time: 0 secs
+
 No activity tracked
 ```
 

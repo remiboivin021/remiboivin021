@@ -1,0 +1,348 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Rémi Boivin | Expert Intégration UAS & Robotique</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;700&family=JetBrains+Mono:wght@400;500&display=swap');
+        
+        :root {
+            --bg-dark: #0a0a0c;
+            --accent-blue: #3b82f6;
+            --accent-emerald: #10b981;
+        }
+
+        body {
+            font-family: 'Inter', sans-serif;
+            background-color: var(--bg-dark);
+            color: white;
+            scroll-behavior: smooth;
+            overflow-x: hidden;
+        }
+
+        .mono { font-family: 'JetBrains+Mono', monospace; }
+
+        /* Animations & Grids */
+        .hero-gradient {
+            background: radial-gradient(circle at 50% 50%, rgba(59, 130, 246, 0.12) 0%, rgba(10, 10, 12, 0) 70%);
+            position: relative;
+        }
+
+        .hero-gradient::before {
+            content: "";
+            position: absolute;
+            top: 0; left: 0; right: 0; bottom: 0;
+            background-image: linear-gradient(rgba(255,255,255,0.02) 1px, transparent 1px), 
+                              linear-gradient(90deg, rgba(255,255,255,0.02) 1px, transparent 1px);
+            background-size: 50px 50px;
+            mask-image: radial-gradient(ellipse at center, black, transparent 80%);
+            pointer-events: none;
+        }
+
+        .reveal {
+            opacity: 0;
+            transform: translateY(30px);
+            transition: all 0.8s cubic-bezier(0.22, 1, 0.36, 1);
+        }
+
+        .reveal.active {
+            opacity: 1;
+            transform: translateY(0);
+        }
+
+        .glass-card {
+            background: rgba(255, 255, 255, 0.03);
+            backdrop-filter: blur(12px);
+            border: 1px rgba(255, 255, 255, 0.08) solid;
+            transition: all 0.4s cubic-bezier(0.23, 1, 0.32, 1);
+        }
+
+        .glass-card:hover {
+            border-color: var(--accent-blue);
+            transform: translateY(-8px);
+            box-shadow: 0 20px 40px rgba(0,0,0,0.4), 0 0 20px rgba(59, 130, 246, 0.1);
+        }
+
+        .nav-blur {
+            backdrop-filter: blur(20px);
+            background: rgba(10, 10, 12, 0.8);
+        }
+    </style>
+</head>
+<body class="antialiased">
+
+    <!-- Navigation -->
+    <nav class="fixed w-full z-50 border-b border-white/5 nav-blur transition-all duration-300">
+        <div class="max-w-7xl mx-auto px-6 h-20 flex items-center justify-between">
+            <div class="flex items-center space-x-3 group cursor-pointer">
+                <div class="w-10 h-10 bg-blue-600 rounded-lg flex items-center justify-center font-bold text-lg group-hover:rotate-12 transition-transform">RB</div>
+                <div class="flex flex-col">
+                    <span class="font-bold tracking-tighter text-lg leading-none uppercase">Rémi Boivin</span>
+                    <span class="text-[10px] text-blue-500 font-bold tracking-widest uppercase">Expert Intégration UAS</span>
+                </div>
+            </div>
+            <div class="hidden md:flex items-center space-x-10 text-sm font-medium text-gray-400">
+                <a href="#problematique" class="hover:text-white transition-colors">Approche</a>
+                <a href="#offres" class="hover:text-white transition-colors">Packs 4 Semaines</a>
+                <a href="#methode" class="hover:text-white transition-colors">Méthodologie</a>
+                <a href="#contact" class="bg-blue-600 hover:bg-blue-500 text-white px-6 py-2.5 rounded-full transition-all shadow-lg shadow-blue-600/20 active:scale-95">Réserver un Diagnostic</a>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section class="relative pt-48 pb-32 overflow-hidden hero-gradient">
+        <div class="max-w-7xl mx-auto px-6 text-center relative z-10">
+            <div class="reveal inline-flex items-center px-4 py-1.5 rounded-full bg-blue-500/10 border border-blue-500/20 text-blue-400 text-xs font-bold mb-8 uppercase tracking-widest">
+                <span class="relative flex h-2 w-2 mr-3">
+                    <span class="animate-ping absolute inline-flex h-full w-full rounded-full bg-blue-400 opacity-75"></span>
+                    <span class="relative inline-flex rounded-full h-2 w-2 bg-blue-500"></span>
+                </span>
+                Disponibilité : Q2 2024
+            </div>
+            
+            <h1 class="reveal text-5xl md:text-7xl font-bold mb-8 tracking-tighter leading-tight">
+                Transformez un empilement de briques en <br>
+                <span class="text-transparent bg-clip-text bg-gradient-to-r from-blue-400 to-emerald-400">démo terrain répétable.</span>
+            </h1>
+            
+            <p class="reveal max-w-3xl mx-auto text-gray-400 text-lg md:text-xl mb-12 leading-relaxed">
+                J’aide les intégrateurs UAS et robotique à livrer une première capacité crédible en 4 semaines, <span class="text-white">sans exploser leur bande passante interne</span> ni prier la veille de la démo.
+            </p>
+            
+            <div class="reveal flex flex-col md:flex-row justify-center gap-6">
+                <a href="#offres" class="px-10 py-4 bg-white text-black font-bold rounded-full hover:bg-blue-50 transition-all active:scale-95 shadow-xl">Sécuriser ma démo</a>
+                <a href="#problematique" class="px-10 py-4 glass-card font-bold rounded-full hover:bg-white/5 transition-all active:scale-95">Pourquoi ça échoue d'habitude ?</a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Problematique / Root Cause -->
+    <section id="problematique" class="py-32 border-y border-white/5 bg-white/[0.01]">
+        <div class="max-w-7xl mx-auto px-6">
+            <div class="grid md:grid-cols-2 gap-20 items-center">
+                <div class="reveal">
+                    <h2 class="text-4xl font-bold mb-8 leading-tight italic">Le risque ne vient pas de la technologie, mais des <span class="text-blue-500 text-not-italic">inconnues du réel</span>.</h2>
+                    <p class="text-gray-400 text-lg leading-relaxed mb-6">
+                        Le véritable enjeu n'est pas de réussir un test en laboratoire, mais de maîtriser la transition vers un système confronté aux imprévus : environnement, capteurs, intégration.
+                    </p>
+                    <p class="text-gray-400 text-lg leading-relaxed mb-8">
+                        Chercher à optimiser la technologie trop tôt est une erreur. La priorité est de <span class="text-white font-semibold">réduire l'espace des surprises</span> en cadrant strictement le scénario et en garantissant un contrôle total en cas de dérive.
+                    </p>
+                    <div class="p-6 border-l-4 border-blue-600 bg-blue-600/5 italic text-gray-300">
+                        "On vous aide à passer de 'ça devrait marcher' à 'on sait comment ça marche, et dans quelles limites'."
+                    </div>
+                </div>
+                
+                <div class="reveal grid gap-6" style="transition-delay: 200ms">
+                    <div class="glass-card p-6 rounded-2xl">
+                        <h4 class="font-bold text-white mb-2 flex items-center">
+                            <i class="fa-solid fa-triangle-exclamation text-amber-500 mr-3"></i>
+                            Le Bricolage de Dernière Minute
+                        </h4>
+                        <p class="text-sm text-gray-500">Évitez l'intégration bancale faite en panique la semaine précédant l'essai client.</p>
+                    </div>
+                    <div class="glass-card p-6 rounded-2xl">
+                        <h4 class="font-bold text-white mb-2 flex items-center">
+                            <i class="fa-solid fa-eye-slash text-blue-500 mr-3"></i>
+                            L'Effet "Boîte Noire"
+                        </h4>
+                        <p class="text-sm text-gray-500">Maîtrisez les limites d'emploi pour répondre sereinement aux questions critiques des décideurs.</p>
+                    </div>
+                    <div class="glass-card p-6 rounded-2xl">
+                        <h4 class="font-bold text-white mb-2 flex items-center">
+                            <i class="fa-solid fa-shield-virus text-emerald-500 mr-3"></i>
+                            Réputation en Jeu
+                        </h4>
+                        <p class="text-sm text-gray-500">Ne laissez pas un incident évitable détruire des mois de R&D devant un client Défense.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Packs -->
+    <section id="offres" class="py-32">
+        <div class="max-w-7xl mx-auto px-6 text-center">
+            <h2 class="reveal text-4xl font-bold mb-4 italic uppercase tracking-tighter">SOW de 4 Semaines</h2>
+            <p class="reveal text-gray-500 mb-20 max-w-2xl mx-auto">Responsabilité end-to-end sur votre démonstrateur, procédures opérateur et artefacts exploitables.</p>
+
+            <div class="grid md:grid-cols-2 gap-12 max-w-5xl mx-auto">
+                <!-- Pack Essentiel -->
+                <div class="reveal glass-card p-10 rounded-[2.5rem] text-left flex flex-col group border-t-2 border-transparent hover:border-blue-500/50" style="transition-delay: 100ms">
+                    <div class="flex justify-between items-start mb-8">
+                        <div class="w-14 h-14 rounded-2xl bg-blue-600/10 flex items-center justify-center text-blue-500 group-hover:scale-110 transition-transform">
+                            <i class="fa-solid fa-crosshairs text-2xl"></i>
+                        </div>
+                        <span class="text-xs font-mono text-gray-600 uppercase tracking-widest bg-white/5 px-3 py-1 rounded-full">MVP Démo</span>
+                    </div>
+                    <h3 class="text-2xl font-bold mb-2 uppercase italic">Pack Essentiel</h3>
+                    <p class="text-sm text-gray-500 mb-6 italic">"Vous arrêtez de prier la veille de la démo."</p>
+                    <div class="text-4xl font-bold mb-8 text-white">29.8 K€ <span class="text-xs text-gray-600 font-mono">HT</span></div>
+                    
+                    <ul class="space-y-4 mb-12 flex-grow text-sm text-gray-400">
+                        <li class="flex items-start"><i class="fa-solid fa-check text-blue-500 mt-1 mr-3"></i> <span><strong>Cadrage Cas d’Usage Critique :</strong> Clarification de ce qui fait gagner ou perdre le lot.</span></li>
+                        <li class="flex items-start"><i class="fa-solid fa-check text-blue-500 mt-1 mr-3"></i> <span><strong>Intégration End-to-End :</strong> Assemblage cohérent Autopilot / Payload / Comms.</span></li>
+                        <li class="flex items-start"><i class="fa-solid fa-check text-blue-500 mt-1 mr-3"></i> <span><strong>Scénario Répétable :</strong> 1 scénario principal + checklists pré/post vol.</span></li>
+                        <li class="flex items-start"><i class="fa-solid fa-check text-blue-500 mt-1 mr-3"></i> <span><strong>Logs & Doc :</strong> Structuration des événements clés et fiche système courte.</span></li>
+                    </ul>
+                    
+                    <button onclick="window.open('https://calendly.com')" class="block w-full py-5 rounded-2xl bg-blue-600 hover:bg-blue-500 text-center font-bold transition-all shadow-xl shadow-blue-600/10">SÉCURISER MA DÉMO</button>
+                </div>
+
+                <!-- Pack Avancé -->
+                <div class="reveal glass-card p-10 rounded-[2.5rem] text-left flex flex-col group border-t-2 border-emerald-500/30 shadow-2xl shadow-emerald-500/5" style="transition-delay: 200ms">
+                    <div class="flex justify-between items-start mb-8">
+                        <div class="w-14 h-14 rounded-2xl bg-emerald-600/10 flex items-center justify-center text-emerald-500 group-hover:scale-110 transition-transform">
+                            <i class="fa-solid fa-shield-halved text-2xl"></i>
+                        </div>
+                        <span class="text-xs font-mono text-emerald-500 uppercase tracking-widest bg-emerald-500/5 px-3 py-1 rounded-full">SORA-Ready</span>
+                    </div>
+                    <h3 class="text-2xl font-bold mb-2 uppercase italic">Pack Avancé</h3>
+                    <p class="text-sm text-gray-500 mb-6 italic">"Vos démos deviennent un atout commercial, pas une roulette russe."</p>
+                    <div class="text-4xl font-bold mb-8 text-emerald-400">51.3 K€ <span class="text-xs text-gray-600 font-mono">HT</span></div>
+                    
+                    <ul class="space-y-4 mb-12 flex-grow text-sm text-gray-400">
+                        <li class="flex items-start"><i class="fa-solid fa-plus text-emerald-500 mt-1 mr-3"></i> <span><strong>Tout le Pack Essentiel</strong></span></li>
+                        <li class="flex items-start"><i class="fa-solid fa-check text-emerald-500 mt-1 mr-3"></i> <span><strong>Jusqu'à 4 scénarios :</strong> Variantes de conditions, distances et complexité.</span></li>
+                        <li class="flex items-start"><i class="fa-solid fa-check text-emerald-500 mt-1 mr-3"></i> <span><strong>Kit SORA-Ready :</strong> Limites d'emploi, liste de risques et mitigations.</span></li>
+                        <li class="flex items-start"><i class="fa-solid fa-check text-emerald-500 mt-1 mr-3"></i> <span><strong>Durcissement Vidéo/C2 :</strong> Revue de qualité des flux pour éviter l'effet "amateur".</span></li>
+                        <li class="flex items-start"><i class="fa-solid fa-check text-emerald-500 mt-1 mr-3"></i> <span><strong>Dry-Run & Support :</strong> Répétition générale et préparation de la présentation technique.</span></li>
+                    </ul>
+                    
+                    <button onclick="window.open('https://calendly.com')" class="block w-full py-5 rounded-2xl bg-emerald-600 hover:bg-emerald-500 text-center font-bold transition-all shadow-xl shadow-emerald-600/10">SÉCURISER L'APPEL D'OFFRE</button>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Livrables & Criteres -->
+    <section class="py-32 bg-white/[0.01] border-y border-white/5">
+        <div class="max-w-7xl mx-auto px-6">
+            <div class="grid md:grid-cols-2 gap-16">
+                <div class="reveal">
+                    <h3 class="text-2xl font-bold mb-10 mono text-blue-500 uppercase tracking-tighter">// ARTEFACTS_LIVRÉS</h3>
+                    <div class="space-y-4">
+                        <div class="flex items-center p-4 glass-card rounded-xl">
+                            <i class="fa-solid fa-code-branch text-blue-500 mr-4"></i>
+                            <span class="text-sm">Configuration figée (tag/release) + checklist de remise en route</span>
+                        </div>
+                        <div class="flex items-center p-4 glass-card rounded-xl">
+                            <i class="fa-solid fa-map-location-dot text-blue-500 mr-4"></i>
+                            <span class="text-sm">Protocole de démo pas-à-pas (Opérateur)</span>
+                        </div>
+                        <div class="flex items-center p-4 glass-card rounded-xl">
+                            <i class="fa-solid fa-file-export text-blue-500 mr-4"></i>
+                            <span class="text-sm">Export logs + template de rapport post-mission</span>
+                        </div>
+                        <div class="flex items-center p-4 glass-card rounded-xl">
+                            <i class="fa-solid fa-gauge-high text-blue-500 mr-4"></i>
+                            <span class="text-sm">Fiche limites d'emploi (Niveau MVP)</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="reveal" style="transition-delay: 200ms">
+                    <h3 class="text-2xl font-bold mb-10 mono text-emerald-500 uppercase tracking-tighter">// CRITÈRES_D'ACCEPTATION</h3>
+                    <ul class="space-y-6">
+                        <li class="flex items-start">
+                            <div class="w-6 h-6 rounded-full bg-emerald-500/20 text-emerald-500 flex items-center justify-center text-xs mt-1 mr-4">1</div>
+                            <p class="text-sm text-gray-400">Démo reproductible 3 fois sur le scénario principal sans incident bloquant.</p>
+                        </li>
+                        <li class="flex items-start">
+                            <div class="w-6 h-6 rounded-full bg-emerald-500/20 text-emerald-500 flex items-center justify-center text-xs mt-1 mr-4">2</div>
+                            <p class="text-sm text-gray-400">Démonstration d'un mode dégradé (Failsafe) avec extraction de logs conforme.</p>
+                        </li>
+                        <li class="flex items-start">
+                            <div class="w-6 h-6 rounded-full bg-emerald-500/20 text-emerald-500 flex items-center justify-center text-xs mt-1 mr-4">3</div>
+                            <p class="text-sm text-gray-400">Temps "mise en route → prêt mission" respectant l'objectif fixé au J1.</p>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Methodology -->
+    <section id="methode" class="py-32">
+        <div class="max-w-7xl mx-auto px-6 text-center">
+            <h2 class="reveal text-3xl font-bold mb-20 uppercase tracking-widest">Le Cycle de 4 Semaines</h2>
+            <div class="grid md:grid-cols-4 gap-4 relative">
+                <div class="hidden md:block absolute top-12 left-0 w-full h-px bg-white/10 z-0"></div>
+                
+                <div class="reveal relative z-10 p-6 glass-card rounded-2xl text-center group" style="transition-delay: 100ms">
+                    <div class="w-12 h-12 bg-blue-600 rounded-full flex items-center justify-center mx-auto mb-6 font-mono font-bold group-hover:scale-125 transition-transform shadow-lg shadow-blue-600/40">01</div>
+                    <h4 class="font-bold mb-2">Stratégie J1</h4>
+                    <p class="text-xs text-gray-500">Cadrage, faisabilité et périmètre démo.</p>
+                </div>
+                <div class="reveal relative z-10 p-6 glass-card rounded-2xl text-center group" style="transition-delay: 200ms">
+                    <div class="w-12 h-12 bg-blue-600 rounded-full flex items-center justify-center mx-auto mb-6 font-mono font-bold group-hover:scale-125 transition-transform">02</div>
+                    <h4 class="font-bold mb-2">Build</h4>
+                    <p class="text-xs text-gray-500">Intégration hardware, soft et comms.</p>
+                </div>
+                <div class="reveal relative z-10 p-6 glass-card rounded-2xl text-center group" style="transition-delay: 300ms">
+                    <div class="w-12 h-12 bg-blue-600 rounded-full flex items-center justify-center mx-auto mb-6 font-mono font-bold group-hover:scale-125 transition-transform">03</div>
+                    <h4 class="font-bold mb-2">Hardening</h4>
+                    <p class="text-xs text-gray-500">Validation terrain et plan failsafe.</p>
+                </div>
+                <div class="reveal relative z-10 p-6 glass-card rounded-2xl text-center group" style="transition-delay: 400ms">
+                    <div class="w-12 h-12 bg-blue-600 rounded-full flex items-center justify-center mx-auto mb-6 font-mono font-bold group-hover:scale-125 transition-transform">04</div>
+                    <h4 class="font-bold mb-2">Delivery</h4>
+                    <p class="text-xs text-gray-500">Checklists, formation et transfert.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Final CTA -->
+    <section id="contact" class="py-32">
+        <div class="max-w-5xl mx-auto px-6 reveal">
+            <div class="relative rounded-[3rem] overflow-hidden bg-blue-600 p-12 md:p-20 text-center shadow-3xl shadow-blue-600/20">
+                <div class="absolute top-0 right-0 w-64 h-64 bg-white/10 rounded-full blur-3xl -mr-32 -mt-32"></div>
+                <div class="absolute bottom-0 left-0 w-64 h-64 bg-black/10 rounded-full blur-3xl -ml-32 -mb-32"></div>
+                
+                <h2 class="text-4xl md:text-5xl font-bold mb-8 relative z-10 italic">Démontrez que votre système est mature.</h2>
+                <p class="text-lg md:text-xl mb-12 opacity-80 relative z-10 max-w-2xl mx-auto">
+                    Ne laissez pas la première confrontation au réel exposer vos fragilités. Diagnostic gratuit de 30 minutes pour vos démos 2024.
+                </p>
+                <div class="flex flex-col md:flex-row gap-6 justify-center relative z-10">
+                    <button onclick="window.open('https://calendly.com')" class="px-12 py-5 bg-black text-white font-bold rounded-2xl hover:scale-105 active:scale-95 transition-all shadow-2xl">RESERVER MON DIAGNOSTIC</button>
+                    <a href="https://linkedin.com" target="_blank" class="px-12 py-5 bg-white/10 backdrop-blur-sm border border-white/20 rounded-2xl font-bold hover:bg-white/20 transition-all">LINKEDIN</a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <footer class="py-16 border-t border-white/5">
+        <div class="max-w-7xl mx-auto px-6 flex flex-col md:flex-row justify-between items-center gap-10">
+            <div class="flex items-center space-x-4">
+                <div class="w-8 h-8 bg-blue-600 rounded-lg flex items-center justify-center font-bold text-sm">RB</div>
+                <div class="flex flex-col text-left">
+                    <span class="font-bold tracking-tighter text-sm uppercase">Rémi Boivin</span>
+                    <span class="text-[9px] text-gray-500 uppercase font-mono tracking-widest italic">Elite UAS Integration Strategy</span>
+                </div>
+            </div>
+            <div class="text-[10px] text-gray-600 mono uppercase tracking-widest">
+                © 2024 — SOLUTIONS CRITIQUES POUR INTÉGRATEURS ROBOTIQUES
+            </div>
+        </div>
+    </footer>
+
+    <script>
+        const observerOptions = { threshold: 0.15 };
+        const observer = new IntersectionObserver((entries) => {
+            entries.forEach(entry => {
+                if (entry.isIntersecting) entry.target.classList.add('active');
+            });
+        }, observerOptions);
+        document.querySelectorAll('.reveal').forEach(el => observer.observe(el));
+
+        window.addEventListener('scroll', () => {
+            const nav = document.querySelector('nav');
+            window.scrollY > 50 ? nav.classList.add('h-16') : nav.classList.remove('h-16');
+        });
+    </script>
+</body>
+</html>

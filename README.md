@@ -104,11 +104,12 @@ Experienced in **automotive and industrial embedded systems**, with a strong int
 <!--START_SECTION:waka-->
 
 ```txt
-From: 13 June 2025 - To: 12 December 2025
+From: 15 August 2025 - To: 13 February 2026
 
-Total Time: 0 secs
+Total Time: 29 mins
 
-No activity tracked
+YAML       26 mins         ██████████████████████▒░░   88.95 %
+Markdown   3 mins          ██▓░░░░░░░░░░░░░░░░░░░░░░   11.05 %
 ```
 
 <!--END_SECTION:waka-->
